@@ -54,7 +54,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images_Pub/gicatof.png
+    - images_Pub/mePic.jpg
 
 
   fonts:

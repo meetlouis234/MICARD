@@ -20,15 +20,25 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               // ignore: prefer_const_constructors
-              CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('images_Pub/gicatof.png'),
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white,
+                    width: 5.0,
+                  ),
+                ),
+                child: CircleAvatar(
+                  radius: 80,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('images_Pub/mePic.jpg'),
+                ),
+                margin: EdgeInsets.all(10.0),
               ),
               const Text(
                 'Etekpe Louis Douye',
                 style: TextStyle(
-                    fontFamily: 'Cinderela', fontSize: 25, color: Colors.white),
+                    fontFamily: 'Cinderela', fontSize: 22, color: Colors.white),
               ),
               const Text('Flutter Developer || Software Engineer',
                   style: TextStyle(
@@ -44,7 +54,10 @@ class MyApp extends StatelessWidget {
                   leading: Icon(Icons.phone, color: Colors.teal),
                   title: Text(
                     '+234 811 6741 625',
-                    style: TextStyle(color: Colors.teal),
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -54,8 +67,11 @@ class MyApp extends StatelessWidget {
                 // ignore: prefer_const_constructors
                 child: const ListTile(
                   leading: Icon(Icons.mail, color: Colors.teal),
-                  title: Text('louisdetekpe@gmail.com',
-                      style: TextStyle(color: Colors.teal)),
+                  title: Text('louisetekpe@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                      )),
                 ),
               ),
             ],
